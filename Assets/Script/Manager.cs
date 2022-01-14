@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private bungeoMaker bungMaker;
+
+    private void Awake()
     {
+        bungMaker = new bungeoMaker();
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        bungMaker.sdf();
     }
 }
